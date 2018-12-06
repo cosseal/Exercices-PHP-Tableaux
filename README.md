@@ -1,10 +1,15 @@
 Consignes :
 
-- Compléter la premiere ligne de code pour créer une fonction maFonction qui affichera "Hello World!"
-- Dans la seconde ligne de code, appeler la fonction que vous venez de créer
-- Compléter la troisieme ligne pour afficher le premier parametre de ma fonction maFonctionParam
-- Compléter la troisieme ligne de code pour que la fonction maFonctionParam retourne le deuxieme parametre
-- Appeler cette fonction
+- Compléter la premiere ligne de code pour utiliser la fonction approriée qui retournera le nombre total d'éléments dans le tableau
+- A la suite, afficher la seconde entrée du tableau $fruits
+- Compléter la deuxieme ligne pour créer un tableau associatif
+- A la suite compléter l'instruction pour afficher l'age de Ben
+- A la suite parcourir le tableau associatif et afficher les index et les valeurs de ce tableau
+- Compléter la troisieme ligne pour trier les valeurs du tableau $colors en fonction de l'ordre croissant des lettres
+dans l'alphabet
+- A la suite trier les valeurs du tableau $colors en fonction de l'ordre décroissant des lettres de l'alphabet
+- Compléter la quatrieme ligne pour trier les valeurs du tableau de la plus petite à la plus grande
+
 
 
 
@@ -111,6 +116,78 @@ représenter mentalement plus de trois dimensions ( sauf exceptions )
 
 Pour parcourir un tableau multi dimensionel, on utilisera des boucles dans des boucles dans des boucles etc... ( bref plus
 vous avez de dimensions plus vous avez de boucles )
+
+
+
+- Fonctions permettant de réorganiser les tableaux :
+
+Il existe des fonctions permettant de trier les tableaux , certaines sont propres aux tableaux associatifs
+
+
+. Trier un tableau du plus petit au plus grand ( ou par ordre alphabetique de la premiere lettre de l'alphabet vers la derniere )
+
+$cars = array("Volvo", "BMW", "Toyota");
+sort($cars);
+
+la fonction sort va trier les éléments du tableau du plus petit vers le plus grand, dans cet exemple, le nouvel ordre sera :
+"BMW","Toyota","Volvo"
+
+. Trier un tableau du plus grand vers le plus petit
+
+$cars = array("Volvo", "BMW", "Toyota");
+rsort($cars);
+
+La fonction rsort va trier les éléments du tableau du plus grand vers le plus petit, le nouvel ordre sera :
+"Volvo","Toyota","BMW"
+
+
+. Trier un tableau associatif de la plus petite VALEUR à la plus grande
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+
+Ici l'ordre du tableau ne changera pas car nos valeurs sont déjà classé de la plus petite à la plus grande
+
+
+. Trier un tableau associatif de la plus grande VALEUR à la plus petite
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+arsort($age);
+
+arsort va trier notre tableau de la plus grande valeur à la plus petite, notre tableau deviendra donc :
+
+ "Joe"=>"43", "Ben"=>"37","Peter"=>"35"
+
+
+. Trier un tableau associatif de la plus petite CLEF à la plus grande
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ksort($age);
+
+Ici notre tableau va être trié de cette façon, ksort utilise la valeur des index pour faire le tri :
+
+"Ben"=>"37", "Joe"=>"43", "Peter"=>"35"
+
+
+. Trier un tableau associatif de la plus petite CLEF à la plus grande
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+ksort($age);
+
+Ici notre tableau va être trié de cette façon, ksort utilise la valeur des index pour faire le tri :
+
+"Ben"=>"37", "Joe"=>"43", "Peter"=>"35"
+
+
+. Trier un tableau associatif de la plus grande CLEF à la plus petite
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+krsort($age);
+
+Ici notre tableau va être trié de cette façon, krsort utilise la valeur des index pour faire le tri :
+
+"Peter"=>"35", "Joe"=>"43", "Ben"=>"37"
+
 
 
 

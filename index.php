@@ -8,19 +8,32 @@
 
 // Premiere ligne
 
-{
-    echo "Hello World!";
-}
+$fruits = array("Apple", "Banana" "Orange");
+echo ;
 
 //Deuxieme ligne
+
+
+$age = array("Peter" "35", "Ben" "37", "Joe" "43");
+
+echo "<br><br>Ben is " .  . " years old.<br><br>";
+
+($age  $x  $y) {
+    echo "<br>Key=" .  . ", Value=" . ;
+}
 
 
 
 //Troisieme ligne
 
-function maFonctionParam($fname, $lname) {
-    echo ;
-}
+$colors = array("red", "green", "blue", "yellow");
+;
+
+
+// Quatrieme ligne
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+;
 
 
 
